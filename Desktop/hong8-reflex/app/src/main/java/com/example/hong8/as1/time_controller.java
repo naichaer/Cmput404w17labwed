@@ -16,7 +16,7 @@ public class time_controller {
         timer.schedule(task, random);
 
         //record the current time when the green button appears
-        long start_time = System.currentTimeMillis();
+        long start_time = System.currentTimeMillis()+random;
         System.out.println(new Date() + "\n");
 
         return start_time;

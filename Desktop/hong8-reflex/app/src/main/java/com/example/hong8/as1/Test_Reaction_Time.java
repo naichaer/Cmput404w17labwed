@@ -63,6 +63,7 @@ public class Test_Reaction_Time extends Activity {
         red.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(Test_Reaction_Time.this, too_early.class);
                 startActivity(intent);
             }
@@ -76,6 +77,7 @@ public class Test_Reaction_Time extends Activity {
                     @Override
                     public void run() {
                         vc.turn_green(player);
+
                     }
                 });
             }
@@ -93,10 +95,10 @@ public class Test_Reaction_Time extends Activity {
 
                     //use method in class "time_controller"
                     //record current time and compute reaction time
-                    reaction_time= tc.compute_time(start_time);
+                    reaction_time = tc.compute_time(start_time);
 
                     //let the user knows that he succeeds to press the button
-                    vc.turn_greenNtick(player,1);
+                    vc.turn_greenNtick(player, 1);
                     check_time.setVisibility(View.VISIBLE);
                 }
             });
