@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff"
-    tools:context="com.example.hong8.as1.Test_Reaction_Time">
+    tools:context="com.example.hong8.hong8-reflex.Test_Reaction_Time">
 
 
     <ImageButton
