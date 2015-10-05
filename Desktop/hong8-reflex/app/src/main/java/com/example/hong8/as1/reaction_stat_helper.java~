@@ -10,7 +10,7 @@ import java.util.List;
  * Created by hongwang on 15/9/29.
  */
 public class reaction_stat_helper extends Application{
-    public int count=0;
+    private int count=0;
     public ArrayList<Integer> reaction_times = new ArrayList<Integer>();
     public ArrayList<Integer> copy_times=new ArrayList<Integer>();
 
