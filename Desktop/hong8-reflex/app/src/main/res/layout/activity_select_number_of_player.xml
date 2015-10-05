@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#72ccae"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="30dp"
+    tools:context="com.example.hong8.as1.select_number_of_player">
+
+    <TextView
+        android:text=" Please select the number of players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ccc74c"
+        android:layout_marginTop="45sp"
+        android:layout_marginBottom="30sp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:layout_gravity="center"
+        android:textColor="#996633"
+        android:textSize="20dp"
+        android:id="@+id/player2"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_gravity="center"
+        android:textColor="#996633"
+        android:textSize="20dp"
+        android:id="@+id/player3"/>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:layout_gravity="center"
+        android:textColor="#996633"
+        android:textSize="20dp"
+        android:id="@+id/player4"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:layout_gravity="center"
+        android:textColor="#996633"
+        android:textSize="15dp"
+        android:id="@+id/main"/>
+
+
+</LinearLayout>

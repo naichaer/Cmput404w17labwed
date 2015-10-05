@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#77ccae"
+
+    tools:context=".MainActivity">
+
+    <TextView 
+        android:text="Select Mode" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="45sp"
+        android:gravity="center"
+        android:textColor="#ccc74c"
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="40sp"/>
+
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="55sp"
+        android:text="Test Reaction Time"
+        android:layout_gravity="center"
+        android:textColor="#996633"
+        android:id="@+id/SelectReactionTime"/>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="55sp"
+        android:text="Game Buzzer"
+        android:layout_gravity="center"
+        android:textColor="#996633"
+        android:id="@+id/SelectGameBuzzer"/>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="55sp"
+        android:text="Reaction Time Statistics"
+        android:layout_gravity="center"
+        android:textColor="#996633"
+        android:id="@+id/ReactionTimeStat"/>
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="55sp"
+        android:text="Clear Data"
+        android:layout_gravity="center"
+        android:textColor="#996633"
+        android:id="@+id/Cleardata"/>
+
+
+</LinearLayout>

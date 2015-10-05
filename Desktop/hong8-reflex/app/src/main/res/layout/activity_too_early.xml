@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:background="#77ccae"
+    tools:context="com.example.hong8.as1.too_early">
+
+    <TextView
+        android:text="Too early!"
+        android:textSize="45sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70sp"
+        android:textColor="#ccc74e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You should wait until the green button appears."
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#996633"
+        android:layout_marginBottom="90sp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/early_restart"
+        />
+
+</LinearLayout>
