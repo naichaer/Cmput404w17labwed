@@ -14,8 +14,10 @@ import java.util.Date;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,12 +29,30 @@ import com.google.gson.reflect.TypeToken;
 public class LonelyTwitterActivity extends Activity {
 
 	private static final String FILENAME = "file.sav"; //model
+	private LonelyTwitterActivity activity= this;
 	private EditText bodyText;    //view
 	private ArrayList<Tweet> tweets= new ArrayList<Tweet>(); //model
 	private ListView oldTweetsList;      //view
 	private Date date;                   //model
 	private String text;                 //model
 	private ArrayAdapter<Tweet> adapter; //view
+	private Button saveButton;
+
+	public ListView getOldTweetsList() {
+		return oldTweetsList;
+	}
+
+	public ArrayList<Tweet> getTweets() {
+		return tweets;
+	}
+
+	public EditText getBodyText() {
+		return bodyText;
+	}
+
+	public Button getSaveButton() {
+		return saveButton;
+	}
 
 	/** Called when the activity is first created. */
 	@Override
@@ -42,7 +62,7 @@ public class LonelyTwitterActivity extends Activity {
 		setContentView(R.layout.main);        //controller
 
 		bodyText = (EditText) findViewById(R.id.body);   //view
-		Button saveButton = (Button) findViewById(R.id.save);  //controller
+		saveButton = (Button) findViewById(R.id.save);
 		oldTweetsList = (ListView) findViewById(R.id.oldTweetsList);  //view
 
 		saveButton.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +86,13 @@ public class LonelyTwitterActivity extends Activity {
 				clearFile();  //model
 				adapter.notifyDataSetChanged(); // view
 
+			}
+		});
+
+		oldTweetsList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				Intent intent  = new Intent(activity ,EditTweetActivity.class);
+				startActivity(intent);
 			}
 		});
 

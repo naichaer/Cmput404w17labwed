@@ -47,7 +47,6 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 implements  
 
     }
 
-
     public void myNotify(){
         wasNotified = true;
 
