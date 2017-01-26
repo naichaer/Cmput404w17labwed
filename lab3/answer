@@ -1,0 +1,22 @@
+1. How do you inspect all environment variables in Python?
+os.environ
+
+2. What changes if we add query parameters?
+(after ?) add query to track the user, who sent the link to whom
+"QUERY_STRING": "magic_tracking_number = 12445"
+
+3. What environment variable contains the query parameter data
+form = cgi.FieldStorage()
+
+What environment variable contains information about the user’s browser
+os.environ['HTTP_USER_AGENT']
+
+4. How does the posted data come to the CGI script
+form.getvalue('user')
+
+5. What is the HTTP header syntax to set a cookie from the server
+"Set-Cookie: loggedin = true"
+
+6. What is the HTTP header syntax the browser uses to send the cookie back
+str(C['loggedin'].value)
+
