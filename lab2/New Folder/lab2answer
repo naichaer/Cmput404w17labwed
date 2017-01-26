@@ -1,0 +1,29 @@
+Question1
+#!/user/bin/env python
+import socket
+serverSocket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+
+Question2
+both client and server can send and receive. So the distinction is not in the sending and receiving. It is in how the connection is created.
+Server Socket - is created to bind() to a port and listen() for a connect() from a client. So a server just waits for a conversation and doesn't start one.
+Client Socket - is created to connect() to a listen() server. The client initiates the connection
+
+Printed: Got a connection from ('127.0.0.1', 35314)
+
+Question3
+reuse port: serverSocket.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
+
+Question4
+Got a connection from ('127.0.0.1', 35510)
+GET / HTTP/1.1
+User-Agent: curl/7.35.0
+Host: localhost:8000
+Accept: */*
+
+Question5
+empty string
+
+Question6
+https://github.com/naichaer/cmput404w17labwed/tree/lab2/lab2
+
+
