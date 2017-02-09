@@ -7,6 +7,6 @@ from django.utils import timezone
 class QuestionMethodTests(TestCase):
 
 	def test_was_published_recently(self):
-		time = timezone.now()+ datetime.timedelta(days=30)
+		time = timezone.now()+ datatime.timedelta(days=30)
 		q= Question(pub_date=time)
 		self.assertEqual(q.was_published_recently(),False)
