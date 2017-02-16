@@ -1,0 +1,63 @@
+/* css comment */
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+img{
+	animation: spin 3s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+		transform:rotate(0deg);
+		}
+
+	100%{
+		transform:rotate(360deg);
+		}
+}
+
+body{
+
+	background-color: orange;
+}
+
+li: nth-child(even){
+	background:linear-gradient(90deg, white,white 1.5em, #CCCCCC,0em,#CCCCCC);
+}
+li: nth-child(odd){
+	background:linear-gradient(90deg, white,white 1.5em, #AAAAAA,0em,#AAAAAA);
+}
+
+ul {
+	list-style-type: none;
+	counter-increment:level1;
+    background-color:white;
+}
+
+ul li:before{
+	content: counter(level1) " ";
+	counter-increment:level1;
+	border:0.25px solid white;
+	border-radius: 50%;
+	padding:0.5em;
+	background-color:#AAFFFF;
+}
+
+/*
+ul li:first-letter{
+	font-size: 200%;
+}*/
+
+ul li:{
+	font-size:200%;
+	padding:0.5em;
+	padding-bottom:0.5em;
+	margin:0.2em;
+	overflow: hidden;
+}
